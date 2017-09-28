@@ -3,20 +3,21 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:id="@+id/linearlayout1">
+    android:id="@+id/linearlayout3">
 
     <TextView
-        android:layout_width="fill_parent"
+        android:id="@+id/textView1"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="This is First Activity"
+        android:text="This is Third Activity"
         android:textAlignment="center"
         android:textSize="30sp"
         android:textStyle="bold" />
 
     <Button
-        android:id="@+id/btnActOne"
+        android:id="@+id/btnActThree"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Go to Second Activity" />
+        android:text="Go to First Activity" />
 
 </LinearLayout>

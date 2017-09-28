@@ -8,62 +8,62 @@ import android.view.View;
 import android.widget.Button;
 import android.widget.LinearLayout;
 
-public class SecondActivity extends Activity implements View.OnClickListener {
+public class ThirdActivity extends Activity implements View.OnClickListener {
 
     final String TAG = "States";
-    Button btnActTwo;
+    Button btnActThree;
 
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.secondactivity);
-        btnActTwo = findViewById(R.id.btnActTwo);
-        btnActTwo.setOnClickListener(this);
-        Log.d(TAG, "SecondActivity: onCreate()");
+        setContentView(R.layout.thirdactivity);
+        btnActThree = findViewById(R.id.btnActThree);
+        btnActThree.setOnClickListener(this);
+        Log.d(TAG, "ThirdActivity: onCreate()");
 
-        LinearLayout linear = findViewById(R.id.linearlayout2);
+        LinearLayout linear = findViewById(R.id.linearlayout3);
         linear.setOnTouchListener(new SwipeTouchListener(this));
     }
 
     @Override
     protected void onRestart() {
         super.onRestart();
-        Log.d(TAG, "SecondActivity: onRestart()");
+        Log.d(TAG, "ThirdActivity: onRestart()");
     }
 
     @Override
     protected void onStart() {
         super.onStart();
-        Log.d(TAG, "SecondActivity: onStart()");
+        Log.d(TAG, "ThirdActivity: onStart()");
     }
 
     @Override
     protected void onResume() {
         super.onResume();
-        Log.d(TAG, "SecondActivity: onResume()");
+        Log.d(TAG, "ThirdActivity: onResume()");
     }
 
     @Override
     protected void onPause() {
         super.onPause();
-        Log.d(TAG, "SecondActivity: onPause()");
+        Log.d(TAG, "ThirdActivity: onPause()");
     }
 
     @Override
     protected void onStop() {
         super.onStop();
-        Log.d(TAG, "SecondActivity: onStop()");
+        Log.d(TAG, "ThirdActivity: onStop()");
     }
 
     @Override
     protected void onDestroy() {
         super.onDestroy();
-        Log.d(TAG, "SecondActivity: onDestroy()");
+        Log.d(TAG, "ThirdActivity: onDestroy()");
     }
 
     @Override
     public void onClick(View v) {
-        Intent intent = new Intent(this, ThirdActivity.class);
+        Intent intent = new Intent(this, MainActivity.class);
         startActivity(intent);
     }
 }
